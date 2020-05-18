@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Welcome to watchmate.com
+  </title>
+  <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href= "wm.css">
+</head>
+<body>
+	<div class="header">
+    <div id="header-left">  
+      <a href="index.html"><img src="C:\Users\bbrag\Downloads\play.png" style="padding: 5px; width:40px; height:40px"></a>
+      <a href="index.html"><span id="name"><font color="#3a90c2">watch</font><font color="white">mate</font></span></a>
+    </div>
+    <div class="search">
+      <span class="fa fa-search icon"></span>
+      <input type="text" name="search1" class="se" placeholder="Search here..." style="height:43px; border-width:0.5px; border-color: black" size="30px">
+    </div>
+    <div class="header-right">
+      <div class="header-right2">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <a href="#home" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+          <div class="dropdown-menu">
+            <a href="#i0">Horror</a>
+            <a href="#i4">Thriller</a>
+            <a href="#i1">Romantic</a>
+            <a href="#i2">Sci-Fi</a>
+            <a href="#i3">Comedy</a></li>
+          </div>
+        </div>
+        <a href="#si">Contact</a>
+        <a href="#ab1 ">About</a>
+        <button class="b1 btn btn-default btn-lg" id="myBtn">Login</button>
+        <div class="modal fade" id="lmod" role="dialog" style="top:100px; margin: auto; width: 520px;height: 500px">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="mod-header">
+          <span class="close1" data-dismiss="modal" style="color: white">&times;</span>
+          <h4> Login</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname" style="color: white"> Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw" style="color: white"> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+              <button type="submit" id="btnlogin" class="btn btn-block"> Login</button>
+          </form>
+        </div>
+        <div class="mod-footer">
+          <p style="color: white"> Not a member?<br><a id="su" href="signup.html" target="_blank" >Sign-up</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      </div>
+    </div> 
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides1">
+      <div class="numbertext">1 / 4</div>
+      <div class="show">
+        <img src="mh.jpg" class="sh" id="im1" style="width:750px">
+      </div>
+    </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">2 / 4</div>
+      <div class="show">
+        <img src="spn.jpg" class="sh" id="im2" style="width:675px">
+      </div>
+    </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">3 / 4</div>
+      <div class="show">
+        <img src="bb.jpg" class="sh" id="im3" style="width:750px">
+      </div>
+    </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">4 / 4</div>
+      <div class="show">
+        <img src="tm.jpg" class="sh" id="im4" style="width:750px">
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+  </div>
+
+  <div class="cat">
+  <p class="catname" id="i0">Horror</p>
+  <div class="mySlides2">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="h1.png" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="h2.png" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="h3.png" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <div class="mySlides2">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="h4.png" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="h5.png" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="h6.png" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <a class="prev" style="left:-6px; top:100%;" onclick="plusSlides(-1,1)">&#10094;</a>
+  <a class="next" style="right:-4px; top:100%" onclick="plusSlides(1,1)">&#10095;</a>
+
+  <div class="cat">
+  <p class="catname" id="i1">Romantic</p>
+  <div class="mySlides3">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="r1.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="r2.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="r3.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <div class="mySlides3">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="r4.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="r5.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="r6.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <a class="prev" style="left:-6px; top:165%;" onclick="plusSlides(-1,2)">&#10094;</a>
+  <a class="next" style="right:-4px; top:165%" onclick="plusSlides(1,2)">&#10095;</a>
+
+  <div class="cat">
+  <p class="catname" id="i2">Sci-Fi</p>
+  <div class="mySlides4">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="s1.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="s2.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="s3.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <div class="mySlides4">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="s4.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="s5.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="s6.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <a class="prev" style="left:-6px; top:220%;" onclick="plusSlides(-1,3)">&#10094;</a>
+  <a class="next" style="right:-4px; top:220%" onclick="plusSlides(1,3)">&#10095;</a>
+  <div class="cat">
+  <p class="catname" id="i3">Comedy</p>
+  <div class="mySlides5">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="c1.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="c2.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="c3.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <div class="mySlides5">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="c4.png" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="c5.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="c6.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <a class="prev" style="left:-6px; top:280%;" onclick="plusSlides(-1,4)">&#10094;</a>
+  <a class="next" style="right:-4px; top:280%" onclick="plusSlides(1,4)">&#10095;</a>
+
+  <div class="cat">
+  <p class="catname" id="i4">Thriller</p>
+  <div class="mySlides6">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="t1.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="t2.jpeg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="t3.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <div class="mySlides6">
+    <div class="row1">
+      <div class="column">
+        <a onclick="myFunction()"/><img src="t4.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="t5.jpg" style="width:90%; height: 300px">
+      </div>
+      <div class="column">
+        <a onclick="myFunction()"/><img src="t6.jpg" style="width:90%; height: 300px">
+      </div>
+    </div>
+  </div>
+  <a class="prev" style="left:-6px; top:335%;" onclick="plusSlides(-1,5)">&#10094;</a>
+  <a class="next" style="right:-4px; top:335%" onclick="plusSlides(1,5)">&#10095;</a>
+
+<div style="left:700px; position: absolute; top:500px">
+  <span class="dot" onclick="currentSlide(1,0)"></span> 
+  <span class="dot" onclick="currentSlide(2,0)"></span> 
+  <span class="dot" onclick="currentSlide(3,0)"></span> 
+  <span class="dot" onclick="currentSlide(4,0)"></span> 
+</div>
+
+<div id="myModal" class="modal1">
+  <div class="modal1-content">
+      <span class="close">&times;</span>
+      <p class="alert">
+        Please <a id="alert1">Log In</a> or <a id="alert2" href="signup.html" target="_blank">Sign-Up</a>
+      </p>
+  </div>  
+</div>
+<hr class="sep">
+    <footer class="site-footer">
+      <div class="container2">
+        <div class="row">
+          <div class="ab col-sm-12 col-md-6" id="ab1">
+            <p style="font-size: 30px;color: white">About</p>
+            <br>
+            <p class="text-justify">This webisite <a href="index.html"><i>watchmate.com</i></a> is a personal project developed by Raghav Jhanwar. this is a sample video streaming website, in which users get to stream videos. It is build up concepts in different programming languages that include HTML, CSS, Bootstrap, JavaScript, PHP, SQL and Algorithm. Enjoy.</p>
+          </div>
+
+          <div class="fl col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#i0">Horror</a></li>
+              <li><a href="#i4">Thriller</a></li>
+              <li><a href="#i1">Romantic</a></li>
+              <li><a href="#i2">Sci-Fi</a></li>
+              <li><a href="#i3">Comedy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container2">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by <a href="#">watchmate.com</a></p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12" id="si">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+	</div>
+<script language='JavaScript' type='text/javascript'>
+
+//SLIDE
+var slideIndex = [1,1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4","mySlides5","mySlides6"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
+}
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block"; 
+}
+
+
+//MODAL 1
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("im1");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//MODAL 2
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("im2");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//MODAL
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("im3");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//MODAL
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("im4");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function myFunction() {
+  alert("Please Log-in to watch");
+}
+
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#lmod").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#alert1").click(function(){
+    $("#lmod").modal();
+  });
+});
+</script>
+<script src="/__/firebase/7.14.4/firebase-app.js"></script>
+<script src="/__/firebase/7.14.4/firebase-analytics.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script src="app.js"></script>
+  <script src="/__/firebase/7.14.4/firebase-auth.js"></script>
+  <script src="/__/firebase/7.14.4/firebase-firestore.js"></script>
+</body>
+</html>
