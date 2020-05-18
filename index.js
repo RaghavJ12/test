@@ -1,5 +1,3 @@
-console.log("ok");
-
 const firebase=require("firebase");
 //const admin=require("firebase-admin");
 //const abc=require("watchmate-c5051-firebase-adminsdk-tgjns-e412e98a25.json");
@@ -24,20 +22,20 @@ const log=document.getElementById('btnlogin');
 const reg=document.getElementById('reg');
 
 log.addEventListener('click',e =>{
-  const e=em.value;
-  const p=pass.value;
+  const email=em.value;
+  const pass=pass.value;
   const auth=firebase.auth();
 
-  const promise=auth.signInWithEmailAndPassword(e,p);
+  const promise=auth.signInWithEmailAndPassword(email,pass);
   promise.catch(e => console.log(e.message));
 
 });
 
 reg.addEventListener('click',e =>{
-  const e=em.value;
-  const p=pass.value;
+  const email=em.value;
+  const pass=pass.value;
   const auth=firebase.auth();
-  const promise=auth.signInWithEmailAndPassword(e,p);
+  const promise=auth.createUserWithEmailAndPassword(email,pass);
   promise.catch(e => console.log(e.message));
 
 });
