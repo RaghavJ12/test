@@ -1,6 +1,6 @@
 const firebase=require("firebase");
 //const admin=require("firebase-admin");
-//const abc=require("watchmate-c5051-firebase-adminsdk-tgjns-e412e98a25.json");
+const abc=require("watchmate-c5051-firebase-adminsdk-tgjns-e412e98a25.json");
 (function(){
 
 const firebaseConfig = {
