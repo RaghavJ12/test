@@ -1,0 +1,20 @@
+{
+  "name": "watchmate2",
+  "version": "1.0.0",
+  "description": "hiiiiii",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js ",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "new",
+    "project"
+  ],
+  "author": "raghav jhanwar",
+  "license": "ISC",
+  "dependencies": {
+    "firebaseui": "^4.5.0",
+    "firebase": "^7.14.2"
+  }
+}
